@@ -5,6 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Explode;
+import android.util.Log;
 import android.view.Window;
 
 public class BaseActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class BaseActivity extends AppCompatActivity {
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         getWindow().setEnterTransition(new Explode());
         super.onCreate(savedInstanceState);
+        Log.e("呵呵","sdf");
 
     }
 }
